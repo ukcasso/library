@@ -6,7 +6,7 @@ const env = process.env.NODE_ENV || 'development';
 const config = {
   "development": {
     "username": "root",
-    "password": "Vendit0730",
+    "password": ****,
     "database": "library",
     "host": "127.0.0.1",
     "dialect": "mysql"
