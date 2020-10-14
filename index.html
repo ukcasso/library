@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>작은 도서관</title>
+    </head>
+    <style>
+    </style>
+    <link rel="stylesheet" href="./style.css">
+    <body onload="startServer()">
+        <div id="library">
+            <center>
+                <div id="logo"><br>
+                    <center>
+                        <a href="#"><img src="./vendit-logo-white.png" onclick="location.reload()" width="150px"></a>
+                    </center>
+                </div>
+            </center>
+            <center>
+                <div id="search">
+                    <center>
+                        <!--<b>서적 검색</b><br>-->
+                        <input type="search" id="searchInput" placeholder="제목, 내용, 저자로 검색">
+                        <input class="dateSet" type="date" id="dateStart" >
+                        ~
+                        <input class="dateSet" type="date" id="dateEnd" >
+                        <button id="searchBtn" type="submit" onclick="searchBook(document.getElementById('searchInput').value, 
+                        new Date(document.getElementById('dateStart').value),
+                        new Date(document.getElementById('dateEnd').value))">검색</button>
+                    </center><br>
+                </div>
+            </center>
+            <center>
+                <div id="table">
+                    <!--<b>찾은 서적 목록</b><br>-->
+                    <center>
+                        <table>
+                            <thead>
+                                <tr><th>순번</th><th>제목</th><th>내용</th><th>저자</th><th>출간날짜</th><th>수정/삭제</th></tr>
+                            </thead>
+                            <tbody id="bTable"></tbody>
+                        </table>
+                    </center>    
+                </div>
+            </center>
+            <center>
+                <div id="newBooks">
+                    <center><br>
+                            <!--<b>새로운 서적 등록</b><br>-->
+                            <input class="new" type="text" id="title" name="title" placeholder="제목">
+                            <input class="new" type="text" id="author" name="author" placeholder="저자">
+                            <input class="dateSet" type="date" id="date" name="date" placeholder="출간날짜"><br><br>
+                            <textarea name="contents" type="text" id="content" name="content" placeholder="내용"></textarea><br>
+                            <button id="putBtn" type="submit" onclick="inputBook()">등록</button>
+                    </center><br>
+                </div>
+            </center>
+        </div>
+        <script src="./library.js"></script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+.dateSet {
+  width: 110px;
+  height: 16px;
+}
+#logo {
+  background-color: #5E6698;
+  width: 950px;
+  padding: 5px;
+}
+#search {
+  background-color: #5E6698;
+  width: 950px;
+  padding: 5px;
+}
+#table {
+  background-color: white;
+  width: 950px;
+  padding: 5px;
+  height: 275px;
+  overflow: auto;
+}
+#newBooks {
+  background-color: #5E6698;
+  width: 950px;
+  padding: 5px;
+}
+#searchInput {
+  width: 440px;
+}
+#searchBtn {
+  width: 100px;
+}
+#putBtn {
+  width: 400px;
+  height: 50px;
+}
+#delBtn {
+  width: 400px;
+  height: 50px;
+}
+#title {
+  width: 495px;
+}
+#content {
+  width: 798px;
+  height: 100px;
+  resize: none;
+}
+table {
+  background-color: white;
+  width: 810px;
+  table-layout: fixed;
+  word-break: break-all;
+}
+tr {
+  background-color: white;
+  padding: 10px;
+  border: 0px solid black;
+}
+th {
+  padding: 10px;
+  border: 0px solid black;
+}
+td {
+  padding: 10px;
+  border: 0px solid black;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: rgb(74, 138, 211);
+}
